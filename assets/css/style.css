@@ -1,0 +1,531 @@
+/* Reset CSS */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: "Lato", sans-serif;
+}
+
+/* Common */
+
+.clear{
+    clear: both;
+}
+
+.pull-right{
+    float: right !important;
+}
+
+.btn{
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 16px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.6;
+    border: 0;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.text-white{
+    color: #fff !important;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third{
+    width: 33.3333%;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+/* Main */
+#main{
+
+}
+
+#header{
+    height: 46px;
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav > li{
+    display: inline-block;
+
+}
+
+#nav > li:first-child{
+    display: inline-block;
+}
+
+#nav li{
+    position: relative;
+
+}
+
+
+#nav>li>a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    display: block;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    font-size: 15px;
+    font-weight: 10;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+    background-color: #CCC;
+    color: #000;
+}
+
+#nav .subnav{
+    position: absolute;
+    display: none;
+    list-style: none;
+    min-width: 160px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#nav .subnav a{
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#header .mobile-menu-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn,
+#header .search-btn{
+    float: right;
+    padding: 0 24px;
+}
+
+#header .search-btn:hover{
+    background-color: #F44336;
+    cursor: pointer;
+}
+
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+
+}
+
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
+
+}
+
+#header .menu-icon,
+#header .search-icon{
+    color: #fff;
+    font-size: 16px;
+    line-height: 46px;
+}
+
+
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/slider/chicago.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content{
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 32px 16px;
+    text-align: center;
+}
+
+#slider .text-heading{
+    padding: 10px 0;
+    font-weight: 400;
+}
+
+#slider .text-description{
+    padding: 15px 0;
+    font-weight: bolder;
+}
+
+
+#content{
+
+}
+
+/* about section */
+
+#content .section-heading{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+#content .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    margin: 15px 0;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text{
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+#content .content-section{
+    width: 800px;
+    padding: 64px 16px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 16px;
+}
+
+#content .member-list{
+    padding: 32px 0;
+    height: 286px;
+}
+
+
+
+#content .member-img{
+    width: 154px;
+    height: 154px;
+    border-radius: 4px;
+}
+
+#content .member-name{
+    text-align: center;
+    margin: 15px 0;
+}
+
+/* tour section */
+.tour-section{
+    background-color: #000;
+}
+
+.tickets-list li{
+    font-size: 15px;
+    list-style: none;
+    padding: 8px 16px;
+    line-height: 1.5;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+}
+
+.tickets-list{
+    background-color: #fff;
+    margin-top: 36px;
+}
+
+.tickets-list .sold-out{
+    background-color: #F44336;
+    color: #fff;
+    display: inline-block;
+    padding: 0 8px;
+    margin-left: 16px;
+}
+
+.tickets-list .quantity{
+    background-color: #000;
+    padding: 2px 8px;
+    color: #fff;
+    border-radius: 50%;
+    float: right;
+    margin:-2px 16px 0 0;
+}
+
+/* places */
+
+.places-list{
+    margin-top: 32px;
+    margin-bottom: 48px;
+}
+
+
+.place-img{
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover{
+    opacity: 0.6;
+}
+
+.place-body{
+    background-color: #fff;
+    padding: 0 16px;
+    font-size: 15px;
+}
+
+.place-heading{
+    padding: 15px 0;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.place-time{
+    margin-bottom: 15px;
+    opacity: 0.6;
+}
+
+.place-desc{
+    margin: 15px 0;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+
+
+/* Contact form */
+.contact-content{
+    margin-top: 48px;
+}
+
+.contact-infor{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-infor i[class*="fa-"]{
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form{
+    font-size: 10px;
+}
+
+.contact-form .form-control{
+    padding: 15px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+
+.map-section img{
+    width: 100%;
+}
+
+/* footer section */
+
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+
+
+}
+
+#footer .social{
+    font-size: 24px;
+}
+
+#footer .social a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+}
+
+#footer .copyright a:hover,
+#footer .social a:hover{
+    color: rgba(0,0,0,0.4);
+}
+
+#footer .copyright{
+    font-size: 15px;
+    margin: 15px;
+    color: rgba(0,0,0,0.6);
+}
+
+#footer .copyright a{
+    color: rgba(0,0,0,0.6);
+}
+
+
+
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal-container{
+    width: 900px;
+    background-color: #fff;
+    min-height: 200px;
+    position: relative;
+    max-width: calc(100% - 32px);
+    animation: modalFaceIn ease 0.5s;
+}
+
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 8px 16px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.modal-close:hover{
+    opacity: 1;
+}
+
+.modal-header{
+    height: 130px;
+    background-color: #009688;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.modal-header-icon{
+    padding-right: 16px;
+}
+
+.modal-body{
+    padding: 16px;
+}
+
+.modal-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.modal-input{
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 24px;
+}
+
+#pay-ticket{
+    background-color: #009688;
+    width: 100%;
+    height: 48px;
+    border: 0;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#pay-ticket:hover{
+    background-color: #ccc;
+    color: #000 ;
+    cursor: pointer;
+}
+
+.modal-footer{
+    padding: 16px;
+    float: right;
+}
+
+.modal-footer a{
+    color: #2196FA;
+}
+
+.modal.open{
+    display: flex;
+}
+
+@keyframes modalFaceIn{
+    from {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        
+    }
+}
